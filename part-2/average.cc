@@ -9,7 +9,11 @@ int main(int argc, char* argv[]) {
 
   // TODO: Validate that there is at least one command line argument.
   // If not, print an error message and return a non-zero value.
-
+  if(arguments.size() < 0)
+  {
+    std::cout << "Error provide at least one argument";
+    return -1;
+  }
   // TODO: Write a for-each loop to sum (add up) all of the command line
   // arguments.
   // Use a double or float type so that your program preserves fractional
